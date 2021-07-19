@@ -23,6 +23,7 @@ import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
 import Image from '@ckeditor/ckeditor5-image/src/image';
+import ImageInsert from "@ckeditor/ckeditor5-image/src/imageinsert";
 import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
 import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
 import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
@@ -63,6 +64,7 @@ DecoupledEditor.builtinPlugins = [
 	Base64UploadAdapter,
 	Heading,
 	Image,
+	ImageInsert,
 	ImageCaption,
 	ImageResize,
 	ImageStyle,
@@ -107,7 +109,7 @@ DecoupledEditor.defaultConfig = {
 			'|',
 			'link',
 			'blockquote',
-			'uploadImage',
+			'insertImage',
 			'insertTable',
 			'mediaEmbed',
 			'|',
