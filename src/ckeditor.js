@@ -19,6 +19,7 @@ import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
+import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
 import Heading from '@ckeditor/ckeditor5-heading/src/heading';
@@ -59,6 +60,7 @@ DecoupledEditor.builtinPlugins = [
 	Strikethrough,
 	Underline,
 	BlockQuote,
+	CodeBlock,
 	CKFinder,
 	CloudServices,
 	Base64UploadAdapter,
@@ -109,6 +111,7 @@ DecoupledEditor.defaultConfig = {
 			'|',
 			'link',
 			'blockquote',
+			'codeBlock',
 			'insertImage',
 			'insertTable',
 			'mediaEmbed',
@@ -133,6 +136,24 @@ DecoupledEditor.defaultConfig = {
 			'tableColumn',
 			'tableRow',
 			'mergeTableCells'
+		]
+	},
+	codeBlock: {
+		languages: [
+			{ language: 'plaintext', label: 'Plain text' }, // The default language.
+			{ language: 'c', label: 'C' },
+			{ language: 'cs', label: 'C#' },
+			{ language: 'cpp', label: 'C++' },
+			{ language: 'css', label: 'CSS' },
+			{ language: 'diff', label: 'Diff' },
+			{ language: 'html', label: 'HTML' },
+			{ language: 'java', label: 'Java' },
+			{ language: 'javascript', label: 'JavaScript' },
+			{ language: 'php', label: 'PHP' },
+			{ language: 'python', label: 'Python' },
+			{ language: 'ruby', label: 'Ruby' },
+			{ language: 'typescript', label: 'TypeScript' },
+			{ language: 'xml', label: 'XML' }
 		]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
