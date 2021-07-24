@@ -19,6 +19,7 @@ import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
 import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
 import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
 import BlockQuote from '@ckeditor/ckeditor5-block-quote/src/blockquote';
+import HtmlEmbed from '@ckeditor/ckeditor5-html-embed/src/htmlembed';
 import CodeBlock from '@ckeditor/ckeditor5-code-block/src/codeblock';
 import CKFinder from '@ckeditor/ckeditor5-ckfinder/src/ckfinder';
 import Base64UploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/base64uploadadapter';
@@ -60,6 +61,7 @@ DecoupledEditor.builtinPlugins = [
 	Strikethrough,
 	Underline,
 	BlockQuote,
+	HtmlEmbed,
 	CodeBlock,
 	CKFinder,
 	CloudServices,
@@ -112,6 +114,7 @@ DecoupledEditor.defaultConfig = {
 			'link',
 			'blockquote',
 			'codeBlock',
+			'htmlEmbed',
 			'insertImage',
 			'insertTable',
 			'mediaEmbed',
