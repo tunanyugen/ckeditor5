@@ -74,6 +74,7 @@ DecoupledEditor.builtinPlugins = [
 	ImageStyle,
 	ImageToolbar,
 	ImageUpload,
+	CKFinder,
 	Indent,
 	IndentBlock,
 	Link,
@@ -116,12 +117,22 @@ DecoupledEditor.defaultConfig = {
 			'codeBlock',
 			'htmlEmbed',
 			'insertImage',
+			'ckfinder',
 			'insertTable',
 			'mediaEmbed',
 			'|',
 			'undo',
 			'redo'
 		]
+	},
+	ckfinder: {
+		// Upload the images to the server using the CKFinder QuickUpload command.
+		uploadUrl: 'https://ckeditor.com/apps/ckfinder/3.5.0/core/connector/php/connector.php?command=Init&lang=en',
+
+		// Define the CKFinder configuration (if necessary).
+		options: {
+			resourceType: 'Images'
+		}
 	},
 	image: {
 		resizeUnit: 'px',
