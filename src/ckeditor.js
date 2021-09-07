@@ -4,6 +4,7 @@
  */
 
 // The editor creator to use.
+import "./style.css";
 import DecoupledEditorBase from '@ckeditor/ckeditor5-editor-decoupled/src/decouplededitor';
 
 import Essentials from '@ckeditor/ckeditor5-essentials/src/essentials';
@@ -125,15 +126,6 @@ DecoupledEditor.defaultConfig = {
 			'redo'
 		]
 	},
-	ckfinder: {
-		// Upload the images to the server using the CKFinder QuickUpload command.
-		uploadUrl: 'https://ckeditor.com/apps/ckfinder/3.5.0/core/connector/php/connector.php?command=Init&lang=en',
-
-		// Define the CKFinder configuration (if necessary).
-		options: {
-			resourceType: 'Images'
-		}
-	},
 	image: {
 		resizeUnit: 'px',
 		toolbar: [
@@ -168,6 +160,31 @@ DecoupledEditor.defaultConfig = {
 			{ language: 'ruby', label: 'Ruby' },
 			{ language: 'typescript', label: 'TypeScript' },
 			{ language: 'xml', label: 'XML' }
+		]
+	},
+	fontSize: {
+		options:[8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50],
+		supportAllValues:true,
+	},
+	fontColor:{
+		colors: [
+			{
+				color: '#d12229',
+			},
+			{
+				color: '#393939',
+			},
+		]
+	},
+	heading: {
+		options: [
+			{ model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+			{ model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+			{ model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' },
+			{ model: 'heading3', view: 'h3', title: 'Heading 3', class: 'ck-heading_heading3' },
+			{ model: 'heading4', view: 'h4', title: 'Heading 4', class: 'ck-heading_heading4' },
+			{ model: 'heading5', view: 'h5', title: 'Heading 5', class: 'ck-heading_heading5' },
+			{ model: 'heading6', view: 'h6', title: 'Heading 6', class: 'ck-heading_heading6' }
 		]
 	},
 	// This value must be kept in sync with the language defined in webpack.config.js.
