@@ -174,6 +174,9 @@ DecoupledEditor.defaultConfig = {
 			{
 				color: '#393939',
 			},
+			{
+				color: '#FFFFFF',
+			},
 		]
 	},
 	heading: {
