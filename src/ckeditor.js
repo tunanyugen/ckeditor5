@@ -86,7 +86,7 @@ DecoupledEditor.builtinPlugins = [
 	PasteFromOffice,
 	Table,
 	TableToolbar,
-	TextTransformation
+	TextTransformation,
 ];
 
 // Editor configuration.
@@ -137,6 +137,9 @@ DecoupledEditor.defaultConfig = {
 			'imageTextAlternative'
 		]
 	},
+	mediaEmbed: {
+        previewsInData: true
+    },
 	table: {
 		contentToolbar: [
 			'tableColumn',
